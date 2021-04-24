@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*body*/
+
+body {
+	background-color: rgba(0,0,0,.1);
+}
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: #1b1b1b;
+}
+.container:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+.navbar-1 {
+	float: left;
+	color: gold;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 600;
+}
+.navbar-2 {
+	float: left;
+	color: white;
+	padding-top: 20px;
+	padding-left: 5px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.container ul {
+	float: right;
+	list-style: none;
+	margin-right: 40px;
+	position: relative;
+}
+.container ul li {
+	float: left;
+	display: inline-block;
+	background-color: #1b1b1b;
+	margin: 0 5px;
+}
+.container ul li a {
+	color: white ;
+	text-decoration: none;
+	line-height: 40px;
+	font-size: 18px;
+	padding: 8px 15px;
+}
+.container ul li a:hover {
+	color: cyan;
+	box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+	border-radius: 5px;
+}
+.container ul ul li a:hover{
+	color: cyan;
+	box-shadow: none;
+}
+.container ul ul {
+	border-top: 3px solid cyan;
+	position: absolute;
+	top: 70px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+	margin-top: -30px;
+}
+.container ul li:hover >ul {
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+}
+.container ul ul li {
+	position: relative;
+	margin: 0;
+	width: 200px;
+	float: none;
+	display: list-item;
+}
+.show,input, {
+	display: none;
+
+}
+@media all and (max-width: 1080px){
+	/*.container ul {
+		margin-right: 0;
+		float: left;
+	}
+	.container .navbar {
+		width: 100%;
+	}
+	.container ul li, .container ul ul li {
+		display: block;
+		width: 100%;
+	}
+	.container ul ul {
+		position: static;
+		top: 50px;
+		border-top: none;
+		float: none;
+		display: none;
+		opacity: 1;
+		visibility: visible;
+	}
+	.show {
+		display: block;
+		color: white;
+		font-size: 18px;
+		padding: 0 20px;
+		cursor: pointer;
+		line-height: 80px;
+	}
+	.show:cover {
+		color: cyan;
+	}
+	.container ul li a:hover {
+		box-shadow: none;
+	}*/
+	/*.icon {
+		display: block;
+		color: white;
+		position: absolute;
+		right: 40px;
+		line-height: 80px;
+		font-size: 25px;
+	}
+	.show + a, ul {
+		display: none;
+	}
+	[id^=btn]:checked + ul {
+		display: block;
+	}*/
+}
+/*konten bawah*/
+.container-satu {
+	width: 70%;
+	height: 100%;
+	background-color: white;
+	margin: auto;
+	padding-top: 50px;
+}
+.profil {
+	width: 100%;
+	height: 350px;
+	background-color: white;
+	margin: auto;
+	text-align: center;
+	padding-top: 2px;
+}
+.keterangan {
+	background-color: gold;
+}
+.profil img {
+	box-shadow: 2px 2px 2px 2px black;
+	border-radius: 10px;
+}
+h1{
+	color: white;
+	font-size: 25px;
+	font-family: times ;
+	text-shadow: 0px 2px 2px black;
+}
+h2{
+	color: black;
+	font-size: 18px;
+}
+h3{
+	font-size: 30px;
+	color: red;
+	font-weight: bold;
+	text-indent: 0;
+	line-height: 0;
+}
+.isi ul {
+	width: auto;
+	margin: auto;
+	text-indent: 0;
+	width: 30%;
+	text-align: center;
+    margin-top: 10px;
+    border-collapse: separate;
+}
+.isi ul li {
+	border:1px solid rgba(0,0,0,.5);
+	margin: 5px;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px black;
+	
+}
+.isi {
+	font-family: cambria , arial , sans-sherif ;
+	margin: auto;
+	width: 90%;
+	height:auto;
+	padding-top: 5px;
+	text-indent: 40px;
+	text-align: justify;
+	line-height: 20px;
+	font-size: 18px;
+}
+.header {
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	top: 40px;
+	background-color: gold;
+}
+.gallery {
+	width: 90%;
+	height: 500px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.gallery img {
+	width: 140px;
+	height:180px;
+	border:1px solid black;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	box-shadow: 3px 3px 2px silver;
+}
+.desc {
+	width: 140px;
+	height: 40px;
+	border:1px solid black;
+	text-align: center;
+	position: absolute;
+	margin-top:-4px;
+	line-height: 40px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px; 
+	background-color: black;
+	color: gold;
+	font-family: times new roman , sans-sherif;
+	box-shadow: 3px 3px 2px silver;
+}
+.footer {
+	width: 100%;
+	height: auto;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	padding: 5px;
+	text-align: center;
+	font-family: agency fb , calibri , sans-sherif;
+	text-shadow: 2px 2px 2px black;
+}
