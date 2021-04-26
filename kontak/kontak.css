@@ -138,107 +138,59 @@ body {
 	margin: auto;
 	padding-top: 50px;
 }
-.profil {
-	width: 100%;
-	height: 350px;
-	background-color: white;
-	margin: auto;
-	text-align: center;
-	padding-top: 2px;
-}
-.keterangan {
-	background-color: gold;
-}
-.profil img {
-	box-shadow: 2px 2px 2px 2px black;
-	border-radius: 10px;
-}
-h1{
-	color: white;
-	font-size: 25px;
-	font-family: times ;
-	text-shadow: 0px 2px 2px black;
-}
-h2{
-	color: black;
-	font-size: 18px;
-}
-h3{
-	font-size: 30px;
-	color: red;
-	font-weight: bold;
-	text-indent: 0;
-	line-height: 0;
-}
-.isi ul {
-	width: auto;
-	margin: auto;
-	text-indent: 0;
-	width: 30%;
-	text-align: center;
-    margin-top: 10px;
-    border-collapse: separate;
-}
-.isi ul li {
-	border:1px solid rgba(0,0,0,.5);
-	margin: 5px;
-	padding: 2px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 1px black;
-	
-}
-.isi {
+.container-satu p {
+	margin-top: 5px;
 	font-family: cambria , arial , sans-sherif ;
-	margin: auto;
-	width: 90%;
-	height:auto;
-	padding-top: 5px;
-	text-indent: 40px;
-	text-align: justify;
-	line-height: 20px;
 	font-size: 18px;
+	margin-left: 10px;
 }
-.header {
-	font-size: 30px;
-	text-align: center;
-	position: relative;
-	top: 40px;
-	background-color: gold;
-	animation: blink 2s infinite;
-}
-.gallery {
-	width: 90%;
-	height: 500px;
-	margin: auto;
-	margin-top: 50px;
-	padding: 5px;
+.tablekontak {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
+	margin: auto;
 }
-.gallery img {
-	width: 140px;
-	height:180px;
-	border:1px solid black;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	box-shadow: 3px 3px 2px silver;
+table {
+	border-collapse: collapse;
+	font-size: 18px;
+	margin-top: 15px;
 }
-.desc {
-	width: 140px;
-	height: 40px;
-	border:1px solid black;
-	text-align: center;
-	position: absolute;
-	margin-top:-4px;
-	line-height: 40px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px; 
-	background-color: black;
+table th {
 	color: gold;
-	font-family: times new roman , sans-sherif;
-	box-shadow: 3px 3px 2px silver;
+	background-color: rgba(0,0,0,.9);
 }
+table tr,th,td {
+	border:1px solid black;
+	padding: 10px;
+}
+table tr a {
+	color: black;
+}
+table tr a:hover {
+	color: blue;
+}
+table tr:nth-child(even){
+	background-color: rgba(0,0,0,.2);
+}
+.notes {
+	margin-top: 20px;
+}
+.notes ul li {
+	padding: 10px;
+	font-size: 18px;
+	font-family: cambria , arial , sans-sherif ;
+	padding-bottom: 20px;
+}
+.blink{
+	width: 50%;
+	height: 60px;
+	font-size: 40px;
+	text-align: center;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 20px cyan;
+	animation: blink 2s infinite;
+	line-height: 50px;
+	}
 .footer {
 	width: 100%;
 	height: auto;
@@ -248,17 +200,22 @@ h3{
 	text-align: center;
 	font-family: agency fb , calibri , sans-sherif;
 	text-shadow: 2px 2px 2px black;
+	margin-top: 20px;
+	font-weight: bold;
 }
 /*animasi*/
 @keyframes blink {
-	0% {color:black;
-		text-shadow: 0 0 0px cyan;
+	0% {color:gold;
+		box-shadow:0 0 0 cyan;
+		background-color: black;
 	}
 	50%{color: white;
-		text-shadow: 0 0 5px black;
+		box-shadow:0 0 10px white;
+		background-color: white;
 	}
-	100%{color: black;
-		text-shadow: 0 0 10px cyan;
+	100%{color: gold;
+		box-shadow:0 0 20px cyan;
+		background-color: black;
 	}
 }
 
@@ -266,7 +223,7 @@ h3{
 
 @media all and (max-width: 968px){
 	.container {
-		border-bottom: 3px solid cyan;
+	border-bottom: 3px solid cyan;
 	}
 	.navbar-1 {
 	font-size: 25px;
@@ -280,52 +237,50 @@ h3{
 	font-size: 16px;
 	}
 	.container-satu {
-		width: 100%;
+	width: 100%;
 	}
-	.profil img{
-		width: 90%;
-		height: 180px;
-		margin-top: 80px;
-		position: relative;
+	.container-satu p {
+	width: 100%;
+	margin-top: 80px;
+	font-family: cambria , arial , sans-sherif ;
+	font-size: 16px;
+	text-align: justify;
 	}
-	h1{
-	font-size: 20px;
-	text-shadow: none;
+	.tablekontak {
+	display: block;
+	padding-top: 10px;
 	}
-	h2{
-	color: black;
-	font-size: 15px;
-	}
-	.isi {
-		margin-top: -45px;
+	table {
 		font-size: 16px;
+		margin: auto;
 	}
-	.isi ul {
-	width: 50%;
+	table th {
+		color: gold;
+		background-color: black;
 	}
-	h3 {
-		font-size: 18px;
+	table tr,td,th {
+		padding: 3px;
 	}
-	.header {
-	font-size: 20px;
-	text-align: center;
-	position: relative;
-	top: 20px;
-	background-color: gold;
+	.table2 {
+		margin-top: 10px;
 	}
-	.gallery {
-		height: 700px;
+	.notes ul p{
+	margin-top: -10px;
 	}
-	.gallery img {
-	width: 100px;
-	height:120px;
+	.notes ul li {
+		font-size: 16px;
+		text-align: justify;
 	}
-	.desc {
-	width: 100px;
-	height: 40px;
-	line-height: 20px;
-	font-size: 15px;
-	text-align: center;
+	.blink {
+		width: 80%;
+		font-size: 30px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.footer {
+		padding: 0;
+	}
+	.footer p {
+		text-align: center;
 	}
 }
-
