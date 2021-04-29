@@ -130,6 +130,12 @@ body {
 	float: none;
 	display: list-item;
 }
+.dropdown span {
+	vertical-align: super;
+	font-style: small;
+	color: red;
+	animation: blink-dua 2s infinite;
+}
 /*konten bawah*/
 .container-satu {
 	width: 70%;
@@ -284,6 +290,15 @@ caption {
 		background-color: black;
 	}
 }
+@keyframes blink-dua {
+	0% {color:red;
+	}
+	50%{color: cyan;
+	}
+	100%{color: red;
+	}
+}
+
 /*media*/
 @media all and (max-width: 968px){
 	.container {
