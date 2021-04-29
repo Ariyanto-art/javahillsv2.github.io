@@ -130,6 +130,12 @@ body {
 	float: none;
 	display: list-item;
 }
+.dropdown span {
+	vertical-align: super;
+	font-style: small;
+	color: red;
+	animation: blink-dua 2s infinite;
+}
 /*konten bawah*/
 .container-satu {
 	width: 70%;
@@ -144,13 +150,12 @@ body {
 	background-color: white;
 	margin: auto;
 	text-align: center;
-	padding-top: 2px;
 }
 .keterangan {
 	background-color: gold;
 }
 .profil img {
-	box-shadow: 2px 2px 2px 2px black;
+	box-shadow: 0px 0px 10px gold;
 	border-radius: 10px;
 }
 h1{
@@ -169,6 +174,28 @@ h3{
 	font-weight: bold;
 	text-indent: 0;
 	line-height: 0;
+}
+h4{
+	font-family: Brush Script MT;
+	font-size: 35px;
+	color: black;
+	font-weight: bold;
+	text-indent: 0;
+	line-height: 0;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size-adjust: .4;
+}
+h4 b {
+	color: red;
+}
+i {
+	font-style: oblique;
+}
+span {
+	font-size: 15px;
+	color: burlywood;
 }
 .isi ul {
 	width: auto;
@@ -249,6 +276,91 @@ h3{
 	font-family: agency fb , calibri , sans-sherif;
 	text-shadow: 2px 2px 2px black;
 }
+/*overlay*/
+
+.container-dua {
+	width: 300px;
+	height: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 0;
+	z-index: 9999;
+	box-shadow: 0 0 5px cyan;
+	background-color: rgba(0,0,0,.7);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.gallery ul li a {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	display: inline-block;
+	font-size:25px;
+	float: right;
+	color: gold;
+	text-decoration: none;
+	font-family: Brush Script MT;
+}
+
+.overlay {
+	width: 0;
+	height: 0;
+	position: fixed;
+	top: 100px;
+	left: 200px;
+	background-color: rgba(0,0,0,0);
+	z-index: 9000;
+	overflow: hidden;
+	text-align: center;
+	box-sizing: border-box;
+}
+.overlay img {
+	margin-top: 20px;
+	width: 40%;
+	height: 350px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px gold;
+	border:none;
+}
+.overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 100px;
+	right: 200px;
+	background-color: aqua;
+	border-radius: 10px;
+}
+.overlay .close {
+	width: 100px;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+	background-color: black;
+	border:2px solid gold;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 2px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 420px;
+	top: 350px;
+}
+.overlay .next {
+	position: absolute;
+	right:180px;
+	top: 90px;
+	width: 40px;
+	height: 100px;
+	box-shadow: none;	
+}
+.overlay .previous {
+	position: absolute;
+	left:-730px;
+	top: 90px;
+	width: 40px;
+	height: 100px;
+	box-shadow: none;
+}
 /*animasi*/
 @keyframes blink {
 	0% {color:black;
@@ -259,6 +371,14 @@ h3{
 	}
 	100%{color: black;
 		text-shadow: 0 0 10px cyan;
+	}
+}
+@keyframes blink-dua {
+	0% {color:red;
+	}
+	50%{color: cyan;
+	}
+	100%{color: red;
 	}
 }
 
@@ -306,6 +426,15 @@ h3{
 	h3 {
 		font-size: 18px;
 	}
+	h4 {
+		font-size: 18px;
+		font-family: Lucida Handwriting;
+	}
+	h4 b {
+		display: inline-block;
+		position: relative;
+		line-height: 40px;
+	}
 	.header {
 	font-size: 20px;
 	text-align: center;
@@ -326,6 +455,49 @@ h3{
 	line-height: 20px;
 	font-size: 15px;
 	text-align: center;
+	}
+	.container-dua {
+	width: 250px;
+	height: 30px;
+	}
+	.gallery ul li a {
+	top: 5px;
+	font-size:16px;
+	text-decoration: none;
+	}
+	.overlay {
+	top: 150px;
+	left: 10px;
+	}
+	.overlay img {
+		width: 220px;
+		height: 300px;
+	}
+	.overlay:target {
+		bottom: 150px;
+		right: 10px;
+	}
+	.overlay .close {
+	width: 80px;
+	height: 30px;
+	left: 135px;
+	top: 300px;
+	}
+	.overlay .next {
+		position: absolute;
+		right:-10px;
+		top: 90px;
+		width: 40px;
+		height: 80px;
+		box-shadow: none;	
+	}
+	.overlay .previous {
+		position: absolute;
+		left:-310px;
+		top: 90px;
+		width: 40px;
+		height: 80px;
+		box-shadow: none;
 	}
 }
 
