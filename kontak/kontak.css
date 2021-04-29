@@ -153,6 +153,8 @@ table {
 	border-collapse: collapse;
 	font-size: 18px;
 	margin-top: 15px;
+	width: 45%;
+	height: auto;
 }
 table th {
 	color: gold;
@@ -253,6 +255,7 @@ table tr:nth-child(even){
 	table {
 		font-size: 16px;
 		margin: auto;
+		width: 90%;
 	}
 	table th {
 		color: gold;
