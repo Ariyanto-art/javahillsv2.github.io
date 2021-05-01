@@ -517,6 +517,10 @@ span {
 	.gallery {
 	height: 700px;
 	}
+	.gallery img {
+		width: 100px;
+		height: 120px;
+	}
 	.desc {
 	width: 100px;
 	height: 40px;
